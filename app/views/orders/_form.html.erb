@@ -1,4 +1,3 @@
-
 <%= form_with(model: order, local: true) do |form| %>
   <% if order.errors.any? %>
     <div id="error_explanation">
@@ -28,11 +27,7 @@
     <%= form.email_field :email, size: 40 %>
   </div>
 
-  <div class="field">
-    <%= form.label :pay_type %>
-    <%= form.select :pay_type, Order.pay_types.keys,
-                  prompt: 'Select a payment method' %>
-  </div>
+  <div id='pay-type-component'></div>
 
   <div class="actions">
     <%= form.submit 'Place Order' %>

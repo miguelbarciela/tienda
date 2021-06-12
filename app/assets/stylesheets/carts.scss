@@ -12,7 +12,7 @@
   td.quantity {
     white-space: nowrap;
   }
-  th.quantity::after {
+  td.quantity::after {
     content: " ×";
   }
   td.price {
