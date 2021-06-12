@@ -6,13 +6,13 @@
   table {
     border-collapse: collapse;
   }
-  td {
+  th {
     padding: 0.5em;
   }
   td.quantity {
     white-space: nowrap;
   }
-  td.quantity::after {
+  th.quantity::after {
     content: " ×";
   }
   td.price {
